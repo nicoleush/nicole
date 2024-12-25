@@ -4,24 +4,38 @@
 <head>
   <title>Index Page</title>
   <style>
-    
+    .image-row {
+            display: flex;
+            /* Arrange images in a row */
+            gap: 100px;
+            /* Space between images */
+    }
     h1 {
       text-align: center;
       
       margin-top: 100px;
       
     }
-    img {
-      display: block;
-      margin: 10 auto; 
-      border-image-width: 2ch;
-      border-image: repeat;
-      width:40ch
+      img {
+            width: 300px;
+            height: 500px;
+            
+            display: block;
+            margin: 10 auto;
+            border-image-width: 2ch;
+            border-image: repeat;
+            
+      }
       
-    }
-     {
+        .text-row {
+            display: flex;
+            /* Arrange images in a row */
+            gap: 30px;
+            /* Space between images */
+        }
+     
 
-    }
+    
 
    
     
@@ -33,8 +47,18 @@
   <button id="logIn">log in</button>
   <div>Welcome! join our famliy!</div>
   <h1 id="koteret">Nicole's Magazine</h1>
-  <img src="https://assets.vogue.com/photos/674e185f81bca0a4fa6a965f/16:9/w_1920%2Cc_limit/GettyImages-2187386116.jpg" alt="Placeholder Image" />
-  <p><a id="fashionAward"href="https://www.example.com" target="_blank">every look worth seeing at the 2024 Fashion awards</a></p>
+  <div class="image-row">
+  <img src="https://assets.vogue.com/photos/674e1a836da4348841426928/master/w_1920%2Cc_limit/2187394971" alt="Placeholder Image" />
+  <img src="https://assets.vogue.com/photos/673bb5838e8d76463811ce3a/master/w_1920,c_limit/GettyImages-2171639434.jpg">
+  </div>
+  <br>
+  <div class="text-row"></div>
+  <p><a href="fashionAwards.html" target="_blank">every look worth seeing at the 2024 Fashion awards</a></p>
+  <p><a  href="sambas.html" target="_blank">Why Do I Suddenly Want Adidas Sambas?
+  By Hannah Jackson</a>
+  </p>
+  </div>
+
   <br>
   
 
