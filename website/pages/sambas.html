@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            /* עיצוב עבור שורת התמונה */
+            .img-row{
+                height: 400px;  /* גובה התמונה */
+                display: block;  /* מאפשר הצגת התמונה כבלוק */
+                margin: 10 auto;  /* ממקם את התמונה במרכז */
+                border-image-width: 2ch;  /* רוחב הגבול סביב התמונה */
+                border-image: repeat;  /* חוזר על הגבול */
+                display: flex;  /* מציב את התמונות בשורה */
+                gap: 100px;  /* מרווח בין התמונות */
+            }
+            /* עיצוב כללי לגוף הדף */
+            body{
+                background-color: lightsteelblue;  /* צבע רקע גוף הדף */
+            }
+            /* עיצוב התמונות */
+            img{
+                border: 5px solid #000000;  /* גבול שחור סביב התמונה */
+            }
+        </style>
     </head>
     <body>
+        <!-- כותרת ראשית של המאמר -->
         <h1>Why Do I Suddenly Want Adidas Sambas?</h1>
 
+        <!-- טקסט גוף המאמר -->
         <div>Over the last few years, one sneaker has dominated the zeitgeist: Adidas Sambas. While you could hardly walk down the
         block without seeing the sleek sneaker, they also enchanted celebrities—Kendall Jenner, Bella Hadid, and Harry Styles
         among them. The sneakers have spawned collaborations from the likes of Wales Bonner, Dover Street Market, and even
@@ -16,7 +37,17 @@
         next big sneaker, sticking instead to my checkerboard Vans slip-ons and lace-up Pumas. But I couldn’t help but admire
         the Sambas’ slim silhouette as I saw people like Kaia Gerber, Hailey Bieber, and Gigi Hadid incorporate them into their
         everyday style. Even Harry Styles and Paul Mescal gave me pangs of envy when I saw them in their kicks.
-</div>
+        </div>
 
+        <!-- שורת התמונות -->
+        <div class="img-row">
+            <img src="https://assets.vogue.com/photos/673bb583abaf80acd13a07f2/2:3/w_1600,c_limit/GettyImages-1411719563.jpg"> <!-- תמונה ראשונה -->
+            <img src="https://assets.vogue.com/photos/673cad4a3f6890846f973ead/master/w_1600,c_limit/1487345075"> <!-- תמונה שנייה -->
+        </div>
+
+        <br>
+        <!-- המשך טקסט המאמר -->
+        <div>I can’t help but feel a little silly worrying about the “right” time to buy a pair of Sambas. They’ve proven their staying power since 1949 when they were designed for athletes to train on icy terrain all winter long. Since then, they resonated across communities, finding fans amongst soccer players and skateboarders, Oasis members, and fashion girls alike. They’re classics, for God’s sake, and this moment is not the first or last time they’ll be popular
+        </div>
     </body>
 </html>

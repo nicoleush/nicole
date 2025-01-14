@@ -3,34 +3,42 @@
 
 <head>
     <style>
+        /* עיצוב לשורת התמונות הראשונה */
         .image-row {
             display: flex;
-            /* Arrange images in a row */
+            /* מארגן את התמונות בשורה */
             gap: 30px;
-            /* Space between images */
-        }
-        .text-row {
-            display: flex;
-            /* Arrange images in a row */
-            gap: 130px;
-            /* Space between images */
-        }
-        .image-row2 {
-            display: flex;
-            /* Arrange images in a row */
-            gap: 30px;
-            /* Space between images */
-        }
-        .text-row2 {
-            display: flex;
-            /* Arrange images in a row */
-            gap: 110px;
-            /* Space between images */
+            /* מרווח בין התמונות */
         }
 
+        /* עיצוב לשורת הטקסט הראשונה */
+        .text-row {
+            display: flex;
+            /* מארגן את הטקסטים בשורה */
+            gap: 130px;
+            /* מרווח בין הטקסטים */
+        }
+
+        /* עיצוב לשורת התמונות השנייה */
+        .image-row2 {
+            display: flex;
+            /* מארגן את התמונות בשורה */
+            gap: 30px;
+            /* מרווח בין התמונות */
+        }
+
+        /* עיצוב לשורת הטקסט השנייה */
+        .text-row2 {
+            display: flex;
+            /* מארגן את הטקסטים בשורה */
+            gap: 110px;
+            /* מרווח בין הטקסטים */
+        }
+
+        /* עיצוב לתמונות */
         img {
             width: 100px;
-            
+            border: 5px solid #000000;
             display: block;
             margin: 10 auto;
             border-image-width: 2ch;
@@ -42,6 +50,8 @@
 </head>
 
 <body>
+    
+    <!-- כותרת הדף -->
     <h1>the looks of the awards</h1>
     <div>It’s that time of the year again. The Fashion Awards sees the industry’s great and good come together for one
         night only
@@ -49,51 +59,56 @@
     <br>
     <div>but, lets be real.... what we really want to know is what every single celeb is wearing on the red carpet!
     </div>
+
+    <!-- שורת תמונות ראשונה -->
     <div class="image-row">
         <img src=https://assets.vogue.com/photos/674e1a836da4348841426928/master/w_1920%2Cc_limit/2187394971>
         <img src=https://assets.vogue.com/photos/674e1a8452c948d4f9df01e9/master/w_1920%2Cc_limit/2187900401>
         <img src=https://assets.vogue.com/photos/674e185afd55c1134c3900ef/master/w_1920%2Cc_limit/GettyImages-2187380740.jpg>
         <img src=https://assets.vogue.com/photos/674e185b112ae82ac341c1cf/master/w_1920%2Cc_limit/GettyImages-2187887494.jpg>
         <img src=https://assets.vogue.com/photos/674e185cb9c9ead2612e912b/master/w_1920%2Cc_limit/GettyImages-2187887940.jpg>
-    </div>>
+    </div>
     </div>
     <br>
+
+    <!-- שורת טקסט ראשונה שתואמת לתמונות בשורה הראשונה -->
     <div class="text-row">
-    <div>Rihanna and A$AP Rocky.</div>
-    <div>Julia Fox.</div>
-    <div>Alexa Chung in Miu Miu.</div>
-    <div>Maya Jama in Conner Ives.</div>
-    <div>Ellie Goulding in Moncler.</div>
+        <div>Rihanna and A$AP Rocky.</div>
+        <div>Julia Fox.</div>
+        <div>Alexa Chung in Miu Miu.</div>
+        <div>Maya Jama in Conner Ives.</div>
+        <div>Ellie Goulding in Moncler.</div>
     </div>
     <br>
+
+    <!-- שורת תמונות שנייה -->
     <div class="image-row2">
         <img src="https://assets.vogue.com/photos/674e185ce2d2d9578a204c46/master/w_1920%2Cc_limit/GettyImages-2187889503.jpg">
         <img src="https://assets.vogue.com/photos/674e185d45024352d7fc38bb/master/w_1920%2Cc_limit/GettyImages-2187383439.jpg">
         <img src="https://assets.vogue.com/photos/674e185ce2d2d9578a204c46/master/w_1920%2Cc_limit/GettyImages-2187889503.jpg">
         <img src="https://assets.vogue.com/photos/674e18606da434884142691b/master/w_1920%2Cc_limit/GettyImages-2187385926.jpg">
         <img src="https://assets.vogue.com/photos/674e18620682222bc7311bfb/master/w_1920%2Cc_limit/GettyImages-2187896820.jpg">
-        </div>
-        <br>
-        <div class="text-row2">
-            <div>Rita Ora in Primark.</div>
-            <div>Alessandra Ambrosio in Self-Portrait.</div>
-            <div>Foday Dumbuya and Tolu Coker.</div>
-            <div>Maya Jama in Conner Ives.</div>
-            <div>Sabato De Sarno and Yanan Wan in Gucci.</div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div>those are some of our favorite fits!</div>
-        <div>you can find more on "vogue" website</div>
+    </div>
+    <br>
 
+    <!-- שורת טקסט שנייה שתואמת לתמונות בשורה השנייה -->
+    <div class="text-row2">
+        <div>Rita Ora in Primark.</div>
+        <div>Alessandra Ambrosio in Self-Portrait.</div>
+        <div>Foday Dumbuya and Tolu Coker.</div>
+        <div>Maya Jama in Conner Ives.</div>
+        <div>Sabato De Sarno and Yanan Wan in Gucci.</div>
+    </div>
+    <br>
+    <br>
+    <br>
 
+    <!-- סיום הטקסט עם הערה -->
+    <div>those are some of our favorite fits!</div>
+    <div>you can find more on "vogue" website</div>
 
-
-
-
-
-    
+    <!-- קישור לקובץ JavaScript (אם יש צורך להוסיף פונקציות) -->
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>

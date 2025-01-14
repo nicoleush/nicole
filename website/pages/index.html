@@ -1,72 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Index Page</title>
+  <!-- Correctly linking the Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    .image-row {
-            display: flex;
-            /* Arrange images in a row */
-            gap: 100px;
-            /* Space between images */
+    /* Apply the Google Font to the <h1> and <a> */
+    h1, a {
+      font-family: 'Dancing Script', cursive;
     }
+
+    /* Apply to the <h1> for title styling */
     h1 {
       text-align: center;
-      
       margin-top: 100px;
-      
+      font-size: 4em;
     }
-      img {
-            width: 300px;
-            height: 500px;
-            
-            display: block;
-            margin: 10 auto;
-            border-image-width: 2ch;
-            border-image: repeat;
-            
-      }
-      
-        .text-row {
-            display: flex;
-            /* Arrange images in a row */
-            gap: 30px;
-            /* Space between images */
-        }
-     
 
-    
+    .image-row {
+      display: flex;
+      gap: 100px;
+    }
 
-   
-    
+    img {
+      height: 500px;
+      border: 5px solid #000000;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .body {
+      background-color: #ebeae5; /* Background color for the body */
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    a:hover {
+      color: lightpink;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
-<body>
-  <button id="signUp">sign up</button>
-  <button id="logIn">log in</button>
-  <div>Welcome! join our famliy!</div>
-  <h1 id="koteret">Nicole's Magazine</h1>
-  <div class="image-row">
-  <img src="https://assets.vogue.com/photos/674e1a836da4348841426928/master/w_1920%2Cc_limit/2187394971" alt="Placeholder Image" />
-  <img src="https://assets.vogue.com/photos/673bb5838e8d76463811ce3a/master/w_1920,c_limit/GettyImages-2171639434.jpg">
-  </div>
-  <br>
-  <div class="text-row"></div>
-  <p><a href="fashionAwards.html" target="_blank">every look worth seeing at the 2024 Fashion awards</a></p>
-  <p><a  href="sambas.html" target="_blank">Why Do I Suddenly Want Adidas Sambas?
-  By Hannah Jackson</a>
-  </p>
-  </div>
-
-  <br>
+  <body>
   
+    <h1 id="koteret">Nicole's Magazine</h1>
+    <button id="signupButton">sign up</button>
+    <button id="loginButton">log in</button>
+    <div>Welcome! Join our family!</div>
+    <div id="welcomeMessage"></div> <!-- כאן תדפיס את ההודעה -->
 
+    <!-- Image row 1 -->
+    <div class="image-row">
+      <div>
+        <img src="https://assets.vogue.com/photos/674e1a836da4348841426928/master/w_1920%2Cc_limit/2187394971" alt="Placeholder Image" />
+        <a href="fashionAwards.html" target="_blank">Every look worth seeing at the 2024 Fashion Awards</a>
+        <div>
+          <br>
+          <button class="rate" data-article="1" data-rating="1">1</button>
+          <button class="rate" data-article="1" data-rating="2">2</button>
+          <button class="rate" data-article="1" data-rating="3">3</button>
+          <button class="rate" data-article="1" data-rating="4">4</button>
+          <button class="rate" data-article="1" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-1">N/A</span></div>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets.vogue.com/photos/673bb5838e8d76463811ce3a/master/w_1920,c_limit/GettyImages-2171639434.jpg" alt="Fashion Image" />
+        <a href="sambas.html" target="_blank">Why Do I Suddenly Want Adidas Sambas? By Hannah Jackson</a>
+        <div>
+          <br>
+          <button class="rate" data-article="2" data-rating="1">1</button>
+          <button class="rate" data-article="2" data-rating="2">2</button>
+          <button class="rate" data-article="2" data-rating="3">3</button>
+          <button class="rate" data-article="2" data-rating="4">4</button>
+          <button class="rate" data-article="2" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-2">N/A</span></div>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets.vogue.com/photos/67605b63973af440fdac957e/master/w_2240,c_limit/lie%20studio%20002.jpg" alt="Accessory Image" />
+        <a href="hair.html" target="_blank">Bows, Clips, and Cuffs! 12 Hair Accessories to Inspire Your Next Style</a>
+        <div>
+          <br>
+          <button class="rate" data-article="3" data-rating="1">1</button>
+          <button class="rate" data-article="3" data-rating="2">2</button>
+          <button class="rate" data-article="3" data-rating="3">3</button>
+          <button class="rate" data-article="3" data-rating="4">4</button>
+          <button class="rate" data-article="3" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-3">N/A</span></div>
+        </div>
+      </div>
+    </div>
 
+    <br>
 
+    <!-- Image row 2 -->
+    <div class="image-row">
+      <div>
+        <img src="https://assets.vogue.com/photos/6759d3a7ec2f0120597ceb0e/master/w_2240,c_limit/GettyImages-2176193500.jpg" alt="Holiday Style" />
+        <a href="6.html" target="_blank">6 Sneaker Trends to Look Out for In 2025</a>
+        <div>
+          <br>
+          <button class="rate" data-article="4" data-rating="1">1</button>
+          <button class="rate" data-article="4" data-rating="2">2</button>
+          <button class="rate" data-article="4" data-rating="3">3</button>
+          <button class="rate" data-article="4" data-rating="4">4</button>
+          <button class="rate" data-article="4" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-4">N/A</span></div>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets.vogue.com/photos/66573b9c765308622838ae2a/master/w_2580%2Cc_limit/GettyImages-2155162037.jpg" alt="Boho Style" />
+        <a href="boho.html" target="_blank">The Best Celebrity Boho Looks of 2024</a>
+        <div>
+          <br>
+          <button class="rate" data-article="5" data-rating="1">1</button>
+          <button class="rate" data-article="5" data-rating="2">2</button>
+          <button class="rate" data-article="5" data-rating="3">3</button>
+          <button class="rate" data-article="5" data-rating="4">4</button>
+          <button class="rate" data-article="5" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-5">N/A</span></div>
+        </div>
+      </div>
+      <div>
+        <img src="https://assets.vogue.com/photos/675936150f2cc2d366b0196d/master/w_2240,c_limit/2185479136" alt="Hair Color Trends" />
+        <a href="color.html" target="_blank">The 11 Hair Color Trends That Will Dominate 2025</a>
+        <div>
+          <br>
+          <button class="rate" data-article="6" data-rating="1">1</button>
+          <button class="rate" data-article="6" data-rating="2">2</button>
+          <button class="rate" data-article="6" data-rating="3">3</button>
+          <button class="rate" data-article="6" data-rating="4">4</button>
+          <button class="rate" data-article="6" data-rating="5">5</button>
+          <div>Average Rating: <span id="avg-6">N/A</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h2>before you leave - dont forget to rate us!</h2>
+    <div>its important for us to know what you like</div>
   
-  
-  
+  <script src="index.js"></script>
 </body>
 
 </html>

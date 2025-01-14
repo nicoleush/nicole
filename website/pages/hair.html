@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           /* 
+            א. כל התגיות עם display: flex ו gap: 30px חוזרות על עצמן.
+            כדאי להמיר את כל המחלקות שיש בהן את אותם מאפיינים למחלקת CSS אחת, כך:
+            .img-row {
+                display: flex;
+                gap: 30px;
+            }
+           */
+           
+            .img-row {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+            .img-row2 {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+            .img-row3 {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+            .img-row4 {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+            .img-row5 {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+            .img-row6 {
+                display: flex;
+                gap: 30px; /* Space between images */
+            }
+
+            img {
+                height: 500px; /* Consider using max-height instead of fixed height for better image resizing */
+                border: 5px solid #000000; /* Black border */
+                display: block;
+                margin: 10px auto; /* Center images */
+            }
+
+            body {
+                background-color: #F5F5F5; /* Soft background color */
+            }
+            
+            /* 
+            ב. כדאי להוסיף style עבור responsive design כמו flex-wrap: wrap על מנת שהתמונות יסתדרו בצורה מסודרת במסכים קטנים.
+            */
+        </style>
+    </head>
+    <body>
+        
+        <h2>12 Hair Accessories to Inspire Your Next Style</h2>
+        <div>Sometimes I look at my outfit before heading out the door and think: “this could be improved by one of the best hair accessories.” Like your favorite red lipstick or go-to earrings, these artful hair adornments provide eye-catching enhancements to any look day or night.</div>
+        <h1 id="fontush">our Favorite Hair Accessories</h1>
+        <div>The Red Bow: Bode Red Winners Sash bow barrette, $250</div>
+        <br>
+        <div>The Embellished Headband: Sophie Buhai Carolyne satin headband, $175</div>
+        <br>
+        <div>The Ponytail Upgrade: Lelet NY glossy dome pony cuff, $158</div>
+        <br>
+        <div>The Festive Velvet: Jennifer Behr velvet bow barrette, $128</div>
+        <br>
+        <div>The Fun Scrunchie: Damson Madder shirred garter scrunchie, $26</div>
+        <br>
+        <div>The Everyday Claw Clip: Emi Jay Big Effing clip, $34</div>
+        <br>
+        <div>The French Pin: Alexandre de Paris Les Classiques hair pin, $67</div>
+        <br>
+        <div>The Sculptural Comb: Completedworks silver-plated hair comb, $535</div>
+        <br>
+        <br>
+        <br>
+        <div>
+            This holiday season, try Dôen’s Lala grosgrain bow on for size—it’s perfect to clip onto a half-up ponytail. Or, go more festive with Jennifer Behr’s beloved velvet style in a dazzling deep red that’s jolly as can be. If coquette ribbons aren’t your speed, consider a bejeweled headband instead. Eugenia Kim has a crystal-embellished one that can add a touch of flair to any all-black party look; whereas, Clio Peppiatt’s is hand-adorned with pearls, beads, and crystals in a plush ivory satin.
+
+            Not to worry, there are many hair accessories perfect for daily wear, too. I’ve seen many an editor use one of Lelet’s sculptural hair cuffs to sweep hair back into a low ponytail before busy workdays. Take your pick of gold and silver finishes by the New York-based label, or acrylic versions in a host of earthy browns, greens, and ivories from Free People. Or, you can upgrade your hair tie with a flowered scrunchie by Maryam Nassir Zadeh and Sandy Liang like all the street style stars at the Copenhagen spring 2025 shows. For something more sleek, we’ve been obsessed with Lie Studio’s clip and Alexandre de Paris’s French pin. Both are versatile enough for hair worn up or down. And nothing beats a classic claw clip—thank goodness for Machete, France Luxe, and Emi Jay for timeless styles sure to be worn again and again. All of these and more, below, in Vogue’s edit of hair accessories to sport into 2025 and beyond.
+        </div>
+        <br>
+        <h2>Bows & Ribbons</h2>
+        <div>These add a feminine touch to a velvet outfit or shimmery sequin dress on New Year’s Eve.</div>
+        <br>
+        <div class="img-row">
+            <img src="https://assets.vogue.com/photos/6761a4a947c40d5b4dac6a0d/3:4/w_640,c_limit/Hair%20Accessories_Slides_0016_image9.jpg" alt="Red bow barrette">
+            <img src="https://assets.vogue.com/photos/6761a8b1c1dbeb383c0bb411/3:4/w_640,c_limit/Slides_L%20copy%20(2)_0003_image3.jpg" alt="Embellished satin headband">
+        </div>
+        <br>
+        <br>
+        <h2>Ponytail Cuffs</h2>
+        <div>Minimalists will love these sleek and sculptural additions to their low-slung ponytails.</div>
+        <br>
+        <div class="img-row2">
+            <img src="https://assets.vogue.com/photos/6761a8b14964247210ec96d6/3:4/w_640,c_limit/Slides_L%20copy%20(2)_0002_image4.jpg" alt="Glossy dome pony cuff">
+            <img src="https://assets.vogue.com/photos/6761a8b108b341a2b2a3a613/3:4/w_640,c_limit/Slides_L%20copy%20(2)_0004_image2.jpg" alt="Sculptural pony cuff">
+        </div>
+        <br>
+        <br>
+        <h2>Headbands</h2>
+        <div>Do Blair Waldorf or Carolyn Bessette-Kennedy proud with a sparkly or plain headband that sweeps hair back with ease.</div>
+        <br>
+        <div class="img-row3">
+            <img src="https://assets.vogue.com/photos/6761a4ac464dab3f372ca806/3:4/w_640,c_limit/Hair%20Accessories_Slides_0011_image14.jpg" alt="Sparkly headband">
+            <img src="https://assets.vogue.com/photos/6761a8b10ea0618394adc62f/3:4/w_640,c_limit/Slides_L%20copy%20(2)_0001_image5.jpg" alt="Plain headband">
+        </div>
+        <br>
+        <br>
+        <h2>Scrunchies</h2>
+        <div>Go big or go bigger with a colorful scrunchie in silk, plaid, and more.</div>
+        <br>
+        <div class="img-row4">
+            <img src="https://assets.vogue.com/photos/6761a8b1c1dbeb383c0bb410/3:4/w_640,c_limit/Slides_L%20copy%20(2)_0000_image6.jpg" alt="Colorful scrunchie">
+            <img src="https://assets.vogue.com/photos/6761a4a99ff46d6206005fd5/3:4/w_640,c_limit/Hair%20Accessories_Slides_0013_image12.jpg" alt="Plaid scrunchie">
+        </div>
+        <br>
+        <br>
+        <h2>Clips</h2>
+        <div>Whether in your hair on your bag, a clip is a must-have in every arsenal</div>
+        <br>
+        <div class="img-row5">
+            <img src="https://assets.vogue.com/photos/6761a4acea118ed3e7739695/3:4/w_640,c_limit/Hair%20Accessories_Slides_0003_image22.jpg" alt="Hair clip in hair">
+            <img src="https://assets.vogue.com/photos/6761a4aaaf3903c6695f5856/3:4/w_640,c_limit/Hair%20Accessories_Slides_0007_image18.jpg" alt="Clip in bag">
+        </div>
+        <br>
+        <br>
+        <h2>Pins & Barettes</h2>
+        <div>Coquette or contemporary, pins, combs, and barettes are an underrated way to style hair.</div>
+        <br>
+        <div class="img-row6">
+            <img src="https://assets.vogue.com/photos/6761a4aad0bf4baf9d5de22e/3:4/w_640,c_limit/Hair%20Accessories_Slides_0010_image15.jpg" alt="Hair pin">
+            <img src="https://assets.vogue.com/photos/6761a4ac97d73f8970164ac1/3:4/w_640,c_limit/Hair%20Accessories_Slides_0012_image13.jpg" alt="Barrette">
+        </div>
+        <br>
+        <br>
+    </body>
+</html>

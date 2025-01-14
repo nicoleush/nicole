@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he"> <!-- מסמן שהשפה העיקרית של הדף היא עברית -->
+<head>
+    <meta charset="UTF-8"> <!-- מגדיר את הקידוד כדי לוודא שתווים בעברית יופיעו נכון -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- מתאים את הדף למסכים שונים כמו טלפונים ניידים -->
+    <style>
+        body {
+            display: flex; /* מסדר את התוכן של הגוף בפלקסבוקס */
+            justify-content: center; /* ממרכז את התוכן אופקית */
+            align-items: center; /* ממרכז את התוכן אנכית */
+            height: 100vh; /* מגדיר את הגובה של הדף כ-100% מגובה המסך */
+            margin: 0; /* מבטל את המרווחים הדיפולטיביים של הדף */
+            flex-direction: column; /* מסדר את התוכן בטור: קודם הכותרת, אחר כך התמונה */
+            text-align: center; /* מיישר את הטקסט למרכז */
+        }
+
+        .container {
+            position: relative; /* מאפשר למקם את הכותרת ביחס לקונטיינר */
+        }
+
+        .img {
+            border-color: black; /* צבע המסגרת של התמונה */
+            border-width: 2px; /* רוחב המסגרת */
+            border-style: solid; /* סוג המסגרת: קו אחיד */
+            width: 80%; /* גודל התמונה הוא 80% מרוחב הקונטיינר */
+        }
+
+        h1 {
+            position: absolute; /* ממקם את הכותרת מעל התמונה */
+            top: -60px; /* מעלה את הכותרת ב-60 פיקסלים מעל התמונה */
+            left: 50%; /* ממרכז את הכותרת אופקית */
+            transform: translateX(-50%); /* מתקן את המיקום כך שהכותרת תהיה בדיוק באמצע */
+            margin: 0; /* מבטל מרווחים דיפולטיביים */
+            font-size: 24px; /* גודל הכותרת */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"> <!-- קונטיינר שמאגד את הכותרת והתמונה -->
+    <h1>Oops! Page not found</h1> <!-- כותרת שמוצגת מעל התמונה -->
+    <img class="img" src="https://www.shutterstock.com/image-photo/black-white-image-hanger-tag-260nw-288795458.jpg"> <!-- תמונה עם מסגרת -->
+</div>
+
+</body>
+</html>
